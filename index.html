@@ -9,53 +9,68 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1 class="site-title">sOrg</h1>
-  </header>
+  <h1>sOrg</h1>
 
-  <main class="main-container">
-    <section class="alert">
-      <p>
-        <strong>Warning</strong><br>
-        This project is incomplete. I'm still working on most tools planned. More features are to come out soon.
-      </p>
-    </section>
+  <div class="divider"></div>
 
-    <div class="content-container">
-      <aside class="quick-access">
-        <div class="section-title">Quick Access</div>
+  <div class="warning-container">
+    <h2>Warning</h2>
+    <p>sOrg is a solo project and still a huge work in progress. More features are to come out soon</p>
+  </div>
+
+  <div class="flex-container">
+    <div style="flex: 1 1 25%;">
+      <div class="card">
+        <h2>Quick access</h2>
         <p>
-          <a href="index.html">Home page</a><br>
-          <a target="_blank" href=""><strike>Downloads</strike> Soon</a><br>
-          <a target="_blank" href="https://github.com/danilaxila3/">GitHub (Mine)</a>
+          <a target="_blank" href="#">&#xf01da Downloads (Soon)</a><br>
+          <a target="_blank" href="https://github.com/danilaxila3">&#xf02a4 Github</a><br>
+          <a target="_blank" href="/">&#xf02dc Home</a>
         </p>
-      </aside>
-
-      <div class="main-content">
-        <section>
-          <div class="section-title">About</div>
-          <p>
-            sOrg is a collection of free and open-source software. It provides both simple graphical and advanced CLI
-            tools. Most of the software is written in C and C++ programming languages.
-          </p>
-        </section>
-
-        <section>
-          <div class="section-title">Tools</div>
-          <p>
-            <a target="_blank" href="https://github.com/danilaxila3/sCore/">sCore</a> - A collection of CLI tools for
-            basic system management and info.<br>
-            <a target="_blank" href="https://github.com/danilaxila3/sMarkup/">sMarkup</a> - A CLI markup language
-            similar to Markdown. Can be used for writing docs.<br>
-            <a target="_blank" href="https://github.com/danilaxila3/sWelcomer/">sWelcomer</a> - A graphical customizable
-            startup welcomer made with <a target="_blank" href="https://libsdl.org/">SDL2</a><br>
-            <a target="_blank" href="https://github.com/danilaxila3/sConfig/">sConfig</a> - A TUI config file (.scf)
-            editor.<br>
-          </p>
-        </section>
       </div>
     </div>
-  </main>
+
+    <div>
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          sOrg is a collection of free software for various purposes. Although it's mostly focused on developers and
+          advanced users, there are some simpler tools too<br>
+          Both CLI and graphical tools are present
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Projects</h2>
+        <p>
+          <a target="_blank" href="https://github.com/danilaxila3/sOrg_website">&#xf02a4 sOrg_website</a>
+          - This website's source<br>
+          <a target="_blank" href="https://github.com/danilaxila3/sMarkup">&#xf02a4 sMarkup</a>
+          - Terminal markup language (.smd)<br>
+          <a target="_blank" href="https://github.com/danilaxila3/sConfig">&#xf02a4 sConfig</a>
+          - Terminal .scf file generator and editor<br>
+          <a target="_blank" href="https://github.com/danilaxila3/sWelcomer">&#xf02a4 sWelcomer</a>
+          - Highly configurable startup quick-access welcomer
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Projects (Fun)</h2>
+        <p>
+          <a target="_blank" href="https://github.com/danilaxila3/scrrain">&#xf02a4 scrrain</a>
+          - Terminal rain screensaver made with ncurses
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Projects (WIP)</h2>
+        <p>
+          <a target="_blank" href="https://github.com/danilaxila3/sCore">&#xf02a4 sCore</a>
+          - Feature-rich coreutils for CLI system management<br>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
