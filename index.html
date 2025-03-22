@@ -6,71 +6,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>sOrg</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="img/favicon.png" rel="icon">
 </head>
 
 <body>
-  <h1>sOrg</h1>
-
-  <div class="divider"></div>
-
-  <div class="flex-container">
-    <div class="card warning" style="flex: 100%">
-      <h2>Warning</h2>
-      <p>sOrg is a solo project and still a huge work in progress. More features are to come out soon</p>
+  <div class="hero" id="top">
+    <h1>sOrg</h1><br>
+    <p>I got bored</p>
+    <hr>
+    <div class="buttons-container">
+      <button onclick="location.href='#about'">About</button>
+      <button onclick="location.href='#projects'">Projects</button>
+      <button onclick="document.getElementById('downloads_button').innerHTML = 'Soon :P'"
+        id="downloads_button">Downloads</button>
     </div>
   </div>
 
-  <div class="flex-container">
-    <div style="flex: 25%;">
-      <div class="card">
-        <h2>Quick access</h2>
-        <p>
-          <a target="_blank" href="#">&#xf01da Downloads (Soon)</a><br>
-          <a target="_blank" href="https://github.com/danilaxila3">&#xf02a4 Github</a><br>
-          <a target="_blank" href="/">&#xf02dc Home</a>
-        </p>
-      </div>
-    </div>
-
-    <div>
-      <div class="card">
-        <h2>About</h2>
-        <p>
-          sOrg is a collection of free software for various purposes. Although it's mostly focused on developers and
-          advanced users, there are some simpler tools too<br>
-          Both CLI and graphical tools are present
-        </p>
-      </div>
-
-      <div class="card">
-        <h2 align="center">Projects</h2>
-        <p>
-          <a target="_blank" href="https://github.com/sOrg-org/sOrg-org.github.io">&#xf02a4 sOrg-org.github.io</a>
-          - This websites source<br>
-        </p>
-        <p align="center">Command line system management</p>
-        <p>
-          <a target="_blank" href="https://github.com/sOrg-org/sCore">&#xf02a4 sCore</a>
-          - Feature-rich coreutils for CLI system management<br>
-          <a target="_blank" href="https://github.com/sOrg-org/sConfig">&#xf02a4 sConfig</a>
-          - TUI .scf file editor<br>
-        </p>
-        <p align="center">Document editing/viewing</p>
-        <p>
-          <a target="_blank" href="https://github.com/sOrg-org/sMarkup">&#xf02a4 sMarkup</a>
-          - TUI document viewer<br>
-          <a target="_blank" href="https://github.com/sOrg-org/sConfig">&#xf02a4 sConfig</a>
-          - TUI .scf file editor<br>
-        </p>
-        <p align="center">Quality of life tools</p>
-        <p>
-          <a target="_blank" href="https://github.com/sOrg-org/sWelcomer">&#xf02a4 sWelcomer</a>
-          - Graphical bootup welcomer
-        </p>
-        <p align="center">...And more (Soon) (Or not)</p>
+  <div class="card warning" style="flex: 100%">
+    <div class="flex-container">
+      <div>
+        <h2>Warning</h2>
+        <p>sOrg is a solo project and still a huge work in progress. More features are to come out soon</p>
+        <p>Most of the promised stuff here didn't even come out yet</p>
       </div>
     </div>
   </div>
+
+  <div class="card" id="about">
+    <div class="flex-container">
+      <div>
+        <h2>Cross platform</h2>
+        <p>Everything in sOrg can be compiled to (at least) Windows and Linux</p>
+        <p>Soon, precompiled binaries will be also available</p>
+      </div>
+      <div>
+        <img src="img/screenshot_0_0.png">
+        <p>Windows</p>
+        <img src="img/screenshot_0_1.png">
+        <p>Linux (WSL2)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="flex-container">
+      <div>
+        <img src="img/screenshot_1.png">
+      </div>
+      <div>
+        <h2>By a dev for devs</h2>
+        <p>sOrg includes tools for system management and development</p>
+        <p>Whether you're writing code or suffering for hours while debugging, sOrg is built to support your needs</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="flex-container">
+      <div>
+        <h2>Yaay free</h2>
+        <p>The entirety of sOrg is completely free, open source and can be viewed <a target="_blank"
+            href="https://github.com/sOrg-org">
+            Here</a></p>
+        <p>Anyone can view the source code and admire how horrible it is  </p>
+      </div>
+      <div>
+        <img src="img/screenshot_2.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <center>
+      <h1>Projects</h2>
+        <p>Only few example projects are shown. View more on <a target="_blank" href="https://github.com/sOrg-org">
+            Github</a></p>
+    </center>
+    <hr>
+    <div class="flex-container" style="margin: 1rem 25%;">
+      <div>
+        <h2><a target="_blank" href="https://github.com/sOrg-org/sCore"> sCore</a></h2>
+      </div>
+      <div>
+        <p>The biggest one yet: A complete (not really, yet to be completed) set of coreutils aimed for simplicity and
+          less confusion for new users</p>
+        <p>Good if you have just started learning</p>
+      </div>
+    </div>
+    <hr>
+    <div class="flex-container" style="margin: 1rem 25%;">
+      <div>
+        <h2><a target="_blank" href="https://github.com/sOrg-org/sMarkup"> sMarkup</a></h2>
+      </div>
+      <div>
+        <p>A really simple TUI markup language viewer written using ncurses</p>
+      </div>
+    </div>
+    <hr>
+    <div class="flex-container" style="margin: 1rem 25%;">
+      <div>
+        <h2><a target="_blank" href="https://github.com/sOrg-org/sColScheme"> sColScheme</a></h2>
+      </div>
+      <div>
+        <p>A CLI script to generate color schemes from a few given parameters</p>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <p>Made with hatred by <a target="_blank" href="https://danilaxila3.github.io"> Me</a></p>
+    <button onclick="location.href='#top'">Back to top</button>
+  </center>
 </body>
 
 </html>

@@ -3,6 +3,10 @@
     src: url("../fonts/JetBrainsMonoNerdFont-Regular.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "JetBrainsMono";
     background-image: url("../img/background.png");
@@ -12,12 +16,11 @@ body {
 
 h1 {
     font-size: 3rem;
-    text-align: center;
     color: #cdd6f4;
 }
 
 h2 {
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: #cdd6f4;
 }
 
@@ -44,8 +47,9 @@ button {
     padding: 0.5rem 3rem;
     background-color: #cdd6f4;
     border: 2px solid #cdd6f4;
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: 0 0.5rem 1rem #11111b80;
+    margin: 1rem;
     transition: 250ms;
 }
 
@@ -61,7 +65,7 @@ button:active {
 }
 
 img {
-    width: 50%;
+    max-width: 100%;
     border-radius: 2rem;
     box-shadow: 0 0.5rem 1rem #11111b;
     transition: 500ms;
@@ -72,19 +76,25 @@ img:hover {
     box-shadow: 0 1rem 1.5rem #11111b;
 }
 
-.divider {
-    margin-left: 25%;
-    width: 50%;
-    height: 0.25vh;
+img:active {
+    transform: translateY(0.1rem);
+    box-shadow: 0 0.4rem 1rem #11111b;
+}
+
+hr {
+    margin-left: 10%;
+    width: 80%;
+    height: 2px;
     background-image: linear-gradient(90deg, #1e1e2e, #cdd6f4, #1e1e2e);
+    border: none;
 }
 
 .card {
-    padding: 1rem;
-    background-color: #11111b20;
+    padding: 5vh 1rem;
+    background-color: #11111b70;
     border-radius: 1rem;
     border: 2px solid #cdd6f4;
-    margin: 2rem 0;
+    margin: 5rem 15vw;
     box-shadow: 0 0.5rem 1rem #11111b;
 }
 
@@ -93,15 +103,46 @@ img:hover {
     border: 2px solid #f38ba8;
 }
 
-.card-column {
-    flex: 100%;
-}
-
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 2rem;
-    margin: 1rem 20vw;
+    margin: 1rem 15%;
+}
+
+.flex-container>div {
+    flex: 1;
+}
+
+.hero {
+    background-color: #11111b;
+    background-image: radial-gradient(circle at bottom, #313244 0, #11111b 100%);
+    display: flex;
+    height: 100vh;
+    border-bottom: 2px solid #cdd6f4;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    text-shadow: 0.5rem 0.5rem 0 #6c7086;
+    margin: 0;
+}
+
+.projects {
+    background-color: #11111b80;
+    border: 2px solid #cdd6f4;
+    border-style: solid none;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
 }
 
 @media (max-width: 640px) {
@@ -110,11 +151,26 @@ img:hover {
     }
 
     .flex-container {
-        margin: 1rem 5vw;
+        margin: 1rem 5%;
         flex-direction: column;
+        align-items: start;
+    }
+
+    .flex-container>div {
+        width: 100%;
+    }
+
+    .flex-container>img {
+        width: 100%;
+        height: 100%;
     }
 
     .card {
+        padding: 1rem;
         margin: 1.5rem 3vw;
+    }
+
+    .buttons-container {
+        flex-direction: column;
     }
 }
